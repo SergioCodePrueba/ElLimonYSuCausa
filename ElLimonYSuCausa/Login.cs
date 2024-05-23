@@ -16,5 +16,17 @@ namespace ElLimonYSuCausa
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuPrincipal v1 = new MenuPrincipal();
+            v1.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
