@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfaceMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceMesas.Designer.cs">
+      <DependentUpon>InterfaceMesas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salon.Designer.cs">
+      <DependentUpon>Salon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Terraza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Terraza.Designer.cs">
+      <DependentUpon>Terraza.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InterfaceMesas.resx">
+      <DependentUpon>InterfaceMesas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +96,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Salon.resx">
+      <DependentUpon>Salon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Terraza.resx">
+      <DependentUpon>Terraza.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

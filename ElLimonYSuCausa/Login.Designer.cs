@@ -113,6 +113,7 @@ namespace ElLimonYSuCausa
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIngresar);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
