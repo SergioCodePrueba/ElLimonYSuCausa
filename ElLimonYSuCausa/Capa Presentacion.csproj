@@ -46,11 +46,95 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Inteface_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inteface_Menu.Designer.cs">
+      <DependentUpon>Inteface_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface _PescaMarisco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface _PescaMarisco.Designer.cs">
+      <DependentUpon>Interface _PescaMarisco.cs</DependentUpon>
+    </Compile>
     <Compile Include="InterfaceMesas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InterfaceMesas.Designer.cs">
       <DependentUpon>InterfaceMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_ArrocesChichar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_ArrocesChichar.Designer.cs">
+      <DependentUpon>Interface_ArrocesChichar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Bebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Bebidas.Designer.cs">
+      <DependentUpon>Interface_Bebidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Causas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Causas.Designer.cs">
+      <DependentUpon>Interface_Causas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Cervezas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Cervezas.Designer.cs">
+      <DependentUpon>Interface_Cervezas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_DelaCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_DelaCasa.Designer.cs">
+      <DependentUpon>Interface_DelaCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_DescripcionPlatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_DescripcionPlatos.Designer.cs">
+      <DependentUpon>Interface_DescripcionPlatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_EsMejorDeDos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_EsMejorDeDos.Designer.cs">
+      <DependentUpon>Interface_EsMejorDeDos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Flameados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Flameados.Designer.cs">
+      <DependentUpon>Interface_Flameados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Npersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Npersonas.Designer.cs">
+      <DependentUpon>Interface_Npersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Pulpo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Pulpo.Designer.cs">
+      <DependentUpon>Interface_Pulpo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Seco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Seco.Designer.cs">
+      <DependentUpon>Interface_Seco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface_Trios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Trios.Designer.cs">
+      <DependentUpon>Interface_Trios.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -78,8 +162,50 @@
     <Compile Include="Terraza.Designer.cs">
       <DependentUpon>Terraza.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Inteface_Menu.resx">
+      <DependentUpon>Inteface_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface _PescaMarisco.resx">
+      <DependentUpon>Interface _PescaMarisco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InterfaceMesas.resx">
       <DependentUpon>InterfaceMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_ArrocesChichar.resx">
+      <DependentUpon>Interface_ArrocesChichar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Bebidas.resx">
+      <DependentUpon>Interface_Bebidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Causas.resx">
+      <DependentUpon>Interface_Causas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Cervezas.resx">
+      <DependentUpon>Interface_Cervezas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_DelaCasa.resx">
+      <DependentUpon>Interface_DelaCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_DescripcionPlatos.resx">
+      <DependentUpon>Interface_DescripcionPlatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_EsMejorDeDos.resx">
+      <DependentUpon>Interface_EsMejorDeDos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Flameados.resx">
+      <DependentUpon>Interface_Flameados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Npersonas.resx">
+      <DependentUpon>Interface_Npersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Pulpo.resx">
+      <DependentUpon>Interface_Pulpo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Seco.resx">
+      <DependentUpon>Interface_Seco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Trios.resx">
+      <DependentUpon>Interface_Trios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
