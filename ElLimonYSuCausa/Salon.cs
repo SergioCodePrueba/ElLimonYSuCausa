@@ -20,188 +20,221 @@ namespace ElLimonYSuCausa
 
         private void btnMesa1_Click(object sender, EventArgs e)
         {
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "01";
             v1.Hide();
             Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa15_Click(object sender, EventArgs e)
         {
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "15";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa15"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa14_Click(object sender, EventArgs e)
         {
-            
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "14";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa14"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-              
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa13_Click(object sender, EventArgs e)
         {
-            
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "13";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa13"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa12_Click(object sender, EventArgs e)
         {
-            
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "12";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa12"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa11_Click(object sender, EventArgs e)
         {
-            
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "11";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa11"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa10_Click(object sender, EventArgs e)
         {
-          
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "10";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa10"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa9_Click(object sender, EventArgs e)
         {
-            
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "09";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa09"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa8_Click(object sender, EventArgs e)
         {
-          
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "08";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa08"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-               
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa7_Click(object sender, EventArgs e)
         {
-            
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "07";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa07"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa6_Click(object sender, EventArgs e)
         {
-            
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "06";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa06"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa5_Click(object sender, EventArgs e)
         {
-           
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "05";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa05"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa4_Click(object sender, EventArgs e)
         {
-          
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "04";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa04"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa3_Click(object sender, EventArgs e)
         {
-           
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "03";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa03"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa2_Click(object sender, EventArgs e)
         {
-            
+
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "02";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa02"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-                
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }
 
         private void btnMesa16_Click(object sender, EventArgs e)
         {
-           
+            Interface_Npersonas v1 = new Interface_Npersonas();
+            string mesa = "16";
             v1.Hide();
-            Form FrmOpen = Application.OpenForms["Mesa16"];
+            Form FrmOpen = Application.OpenForms["Mesa01"];
             if (FrmOpen == null)
             {
-               
+                v1.num_mesa(mesa);
                 v1.Show();
             }
         }

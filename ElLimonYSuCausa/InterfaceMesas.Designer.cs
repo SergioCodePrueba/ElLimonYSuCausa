@@ -29,7 +29,6 @@ namespace ElLimonYSuCausa
         /// </summary>
         private void InitializeComponent()
         {
-            this.PanelCategorias = new System.Windows.Forms.FlowLayoutPanel();
             this.PanelPlatos = new System.Windows.Forms.FlowLayoutPanel();
             this.dgvListadoMesas = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,19 +36,17 @@ namespace ElLimonYSuCausa
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.txtnumMesa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.txtnumMesa = new System.Windows.Forms.TextBox();
+            this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
+            this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
+            this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
+            this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
+            this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoMesas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PanelCategorias
-            // 
-            this.PanelCategorias.Location = new System.Drawing.Point(12, 31);
-            this.PanelCategorias.Name = "PanelCategorias";
-            this.PanelCategorias.Size = new System.Drawing.Size(346, 264);
-            this.PanelCategorias.TabIndex = 0;
             // 
             // PanelPlatos
             // 
@@ -111,14 +108,6 @@ namespace ElLimonYSuCausa
             this.button5.Text = "Cambio Mesas";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // txtnumMesa
-            // 
-            this.txtnumMesa.Enabled = false;
-            this.txtnumMesa.Location = new System.Drawing.Point(58, 5);
-            this.txtnumMesa.Name = "txtnumMesa";
-            this.txtnumMesa.Size = new System.Drawing.Size(28, 20);
-            this.txtnumMesa.TabIndex = 8;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -147,15 +136,59 @@ namespace ElLimonYSuCausa
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // txtnumMesa
+            // 
+            this.txtnumMesa.Enabled = false;
+            this.txtnumMesa.Location = new System.Drawing.Point(58, 5);
+            this.txtnumMesa.Name = "txtnumMesa";
+            this.txtnumMesa.Size = new System.Drawing.Size(41, 20);
+            this.txtnumMesa.TabIndex = 12;
+            // 
+            // BottomToolStripPanel
+            // 
+            this.BottomToolStripPanel.Location = new System.Drawing.Point(0, 0);
+            this.BottomToolStripPanel.Name = "BottomToolStripPanel";
+            this.BottomToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.BottomToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.BottomToolStripPanel.Size = new System.Drawing.Size(0, 0);
+            // 
+            // TopToolStripPanel
+            // 
+            this.TopToolStripPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopToolStripPanel.Name = "TopToolStripPanel";
+            this.TopToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.TopToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.TopToolStripPanel.Size = new System.Drawing.Size(0, 0);
+            // 
+            // RightToolStripPanel
+            // 
+            this.RightToolStripPanel.Location = new System.Drawing.Point(0, 0);
+            this.RightToolStripPanel.Name = "RightToolStripPanel";
+            this.RightToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.RightToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.RightToolStripPanel.Size = new System.Drawing.Size(0, 0);
+            // 
+            // LeftToolStripPanel
+            // 
+            this.LeftToolStripPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftToolStripPanel.Name = "LeftToolStripPanel";
+            this.LeftToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.LeftToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.LeftToolStripPanel.Size = new System.Drawing.Size(0, 0);
+            // 
+            // ContentPanel
+            // 
+            this.ContentPanel.Size = new System.Drawing.Size(289, 347);
+            // 
             // InterfaceMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 649);
+            this.Controls.Add(this.txtnumMesa);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtnumMesa);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -163,7 +196,6 @@ namespace ElLimonYSuCausa
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvListadoMesas);
             this.Controls.Add(this.PanelPlatos);
-            this.Controls.Add(this.PanelCategorias);
             this.Name = "InterfaceMesas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InterfaceMesas";
@@ -174,8 +206,6 @@ namespace ElLimonYSuCausa
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel PanelCategorias;
         private System.Windows.Forms.FlowLayoutPanel PanelPlatos;
         private System.Windows.Forms.DataGridView dgvListadoMesas;
         private System.Windows.Forms.Button button1;
@@ -183,9 +213,14 @@ namespace ElLimonYSuCausa
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox txtnumMesa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox txtnumMesa;
+        private System.Windows.Forms.ToolStripPanel BottomToolStripPanel;
+        private System.Windows.Forms.ToolStripPanel TopToolStripPanel;
+        private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
+        private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
+        private System.Windows.Forms.ToolStripContentPanel ContentPanel;
     }
 }

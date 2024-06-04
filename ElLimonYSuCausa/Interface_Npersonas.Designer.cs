@@ -34,6 +34,8 @@ namespace ElLimonYSuCausa
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Borrar = new System.Windows.Forms.Button();
             this.btn_Aceptar = new System.Windows.Forms.Button();
+            this.txt_nummesa = new System.Windows.Forms.Label();
+            this.txt_nm = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -60,6 +62,7 @@ namespace ElLimonYSuCausa
             this.btn_Salir.TabIndex = 2;
             this.btn_Salir.Text = "Salir";
             this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // btn_Borrar
             // 
@@ -80,17 +83,35 @@ namespace ElLimonYSuCausa
             this.btn_Aceptar.UseVisualStyleBackColor = true;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
+            // txt_nummesa
+            // 
+            this.txt_nummesa.AutoSize = true;
+            this.txt_nummesa.Location = new System.Drawing.Point(271, 9);
+            this.txt_nummesa.Name = "txt_nummesa";
+            this.txt_nummesa.Size = new System.Drawing.Size(0, 13);
+            this.txt_nummesa.TabIndex = 5;
+            // 
+            // txt_nm
+            // 
+            this.txt_nm.Location = new System.Drawing.Point(296, 6);
+            this.txt_nm.Name = "txt_nm";
+            this.txt_nm.Size = new System.Drawing.Size(21, 20);
+            this.txt_nm.TabIndex = 6;
+            // 
             // Interface_Npersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 156);
+            this.Controls.Add(this.txt_nm);
+            this.Controls.Add(this.txt_nummesa);
             this.Controls.Add(this.btn_Aceptar);
             this.Controls.Add(this.btn_Borrar);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.txt_npersonas);
             this.Controls.Add(this.label1);
             this.Name = "Interface_Npersonas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interface_Npersonas";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -104,5 +125,7 @@ namespace ElLimonYSuCausa
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Button btn_Borrar;
         private System.Windows.Forms.Button btn_Aceptar;
+        private System.Windows.Forms.Label txt_nummesa;
+        private System.Windows.Forms.TextBox txt_nm;
     }
 }
