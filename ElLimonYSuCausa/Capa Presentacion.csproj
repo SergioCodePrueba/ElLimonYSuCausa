@@ -142,6 +142,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenedor_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedor_Empleados.Designer.cs">
+      <DependentUpon>Mantenedor_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenedo_Platos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedo_Platos.Designer.cs">
+      <DependentUpon>Mantenedo_Platos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
