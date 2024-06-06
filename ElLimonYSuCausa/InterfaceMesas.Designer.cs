@@ -29,7 +29,6 @@ namespace ElLimonYSuCausa
         /// </summary>
         private void InitializeComponent()
         {
-            this.PanelPlatos = new System.Windows.Forms.FlowLayoutPanel();
             this.dgvListadoMesas = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,15 +44,11 @@ namespace ElLimonYSuCausa
             this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoMesas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // PanelPlatos
-            // 
-            this.PanelPlatos.Location = new System.Drawing.Point(12, 316);
-            this.PanelPlatos.Name = "PanelPlatos";
-            this.PanelPlatos.Size = new System.Drawing.Size(346, 283);
-            this.PanelPlatos.TabIndex = 1;
             // 
             // dgvListadoMesas
             // 
@@ -180,11 +175,24 @@ namespace ElLimonYSuCausa
             // 
             this.ContentPanel.Size = new System.Drawing.Size(289, 347);
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(15, 31);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            //
+            this.splitContainer1.Size = new System.Drawing.Size(343, 512);
+            this.splitContainer1.SplitterDistance = 246;
+            this.splitContainer1.TabIndex = 14;
+            // 
             // InterfaceMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 649);
+            this.ClientSize = new System.Drawing.Size(809, 563);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.txtnumMesa);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -195,18 +203,18 @@ namespace ElLimonYSuCausa
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvListadoMesas);
-            this.Controls.Add(this.PanelPlatos);
             this.Name = "InterfaceMesas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InterfaceMesas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoMesas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel PanelPlatos;
         private System.Windows.Forms.DataGridView dgvListadoMesas;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -222,5 +230,6 @@ namespace ElLimonYSuCausa
         private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
         private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
         private System.Windows.Forms.ToolStripContentPanel ContentPanel;
+        private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }
