@@ -79,6 +79,7 @@ namespace ElLimonYSuCausa
             this.lLEVARToolStripMenuItem.Name = "lLEVARToolStripMenuItem";
             this.lLEVARToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.lLEVARToolStripMenuItem.Text = "LLEVAR";
+            this.lLEVARToolStripMenuItem.Click += new System.EventHandler(this.lLEVARToolStripMenuItem_Click);
             // 
             // dELIVERYToolStripMenuItem
             // 

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capa_Logica
+namespace Capa_Datos
 {
-    public class Class1
+    class Datos_Platos
     {
-
+        //Categoria, nombre producto, precio
     }
 }

@@ -112,6 +112,12 @@
     <Compile Include="Interface_Flameados.Designer.cs">
       <DependentUpon>Interface_Flameados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface_Llevar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface_Llevar.Designer.cs">
+      <DependentUpon>Interface_Llevar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface_Npersonas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,9 @@
     <EmbeddedResource Include="Interface_Flameados.resx">
       <DependentUpon>Interface_Flameados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interface_Llevar.resx">
+      <DependentUpon>Interface_Llevar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interface_Npersonas.resx">
       <DependentUpon>Interface_Npersonas.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,17 +269,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Capa Datos\Capa Datos.csproj">
+    <ProjectReference Include="..\Capa Datos\CapaDatos.csproj">
       <Project>{D8CB7694-B400-47D6-B9B2-FEA31A1B0805}</Project>
-      <Name>Capa Datos</Name>
+      <Name>CapaDatos</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Capa Entidad\Capa Entidad.csproj">
+    <ProjectReference Include="..\Capa Entidad\CapaEntidad.csproj">
       <Project>{8aa75662-7dc5-420f-acb9-2c88ee35c9ad}</Project>
-      <Name>Capa Entidad</Name>
+      <Name>CapaEntidad</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Capa Logica\Capa Logica.csproj">
+    <ProjectReference Include="..\Capa Logica\CapaLogica.csproj">
       <Project>{e1f37e5e-1f83-4ba1-9547-89951755c3bb}</Project>
-      <Name>Capa Logica</Name>
+      <Name>CapaLogica</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

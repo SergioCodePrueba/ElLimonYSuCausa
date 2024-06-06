@@ -16,6 +16,7 @@ namespace ElLimonYSuCausa
         Terraza terraza = new Terraza();
         Mantenedo_Platos mp = new Mantenedo_Platos();
         Mantenedor_Empleados me = new Mantenedor_Empleados();
+        Interface_Llevar l = new Interface_Llevar();
         public MenuPrincipal()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace ElLimonYSuCausa
             terraza.Hide();
             mp.Hide();
             me.Hide();
+            l.Hide();
             Form FrmOpen = Application.OpenForms["salon"];
             if (FrmOpen == null) {
                 salon.MdiParent = this;
@@ -41,6 +43,7 @@ namespace ElLimonYSuCausa
             salon.Hide();
             me.Hide();
             mp.Hide();
+            l.Hide();
             Form FrmOpen = Application.OpenForms["terraza"];
             if (FrmOpen == null)
             {
@@ -54,6 +57,7 @@ namespace ElLimonYSuCausa
             terraza.Hide();
             salon.Hide();
             me.Hide();
+            l.Hide();
             Form FrmOpen = Application.OpenForms["Platos"];
             if (FrmOpen == null)
             {
@@ -67,6 +71,7 @@ namespace ElLimonYSuCausa
             terraza.Hide();
             salon.Hide();
             mp.Hide();
+            l.Hide();
             Form FrmOpen = Application.OpenForms["Platos"];
             if (FrmOpen == null)
             {
@@ -78,6 +83,20 @@ namespace ElLimonYSuCausa
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lLEVARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            terraza.Hide();
+            salon.Hide();
+            mp.Hide();
+            me.Hide();
+            Form FrmOpen = Application.OpenForms["Platos"];
+            if (FrmOpen == null)
+            {
+                l.MdiParent = this;
+                l.Show();
+            }
         }
     }
 }
