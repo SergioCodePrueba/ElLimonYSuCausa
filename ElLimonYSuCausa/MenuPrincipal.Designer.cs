@@ -36,6 +36,7 @@ namespace ElLimonYSuCausa
             this.dELIVERYToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pLATOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eMPLEADOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@ namespace ElLimonYSuCausa
             this.lLEVARToolStripMenuItem,
             this.dELIVERYToolStripMenuItem,
             this.pLATOSToolStripMenuItem,
-            this.eMPLEADOSToolStripMenuItem});
+            this.eMPLEADOSToolStripMenuItem,
+            this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(902, 24);
@@ -91,6 +93,7 @@ namespace ElLimonYSuCausa
             this.pLATOSToolStripMenuItem.Name = "pLATOSToolStripMenuItem";
             this.pLATOSToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.pLATOSToolStripMenuItem.Text = "PLATOS";
+            this.pLATOSToolStripMenuItem.Click += new System.EventHandler(this.pLATOSToolStripMenuItem_Click);
             // 
             // eMPLEADOSToolStripMenuItem
             // 
@@ -98,6 +101,15 @@ namespace ElLimonYSuCausa
             this.eMPLEADOSToolStripMenuItem.Name = "eMPLEADOSToolStripMenuItem";
             this.eMPLEADOSToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.eMPLEADOSToolStripMenuItem.Text = "EMPLEADOS";
+            this.eMPLEADOSToolStripMenuItem.Click += new System.EventHandler(this.eMPLEADOSToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.salirToolStripMenuItem.Text = "SALIR";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -110,6 +122,7 @@ namespace ElLimonYSuCausa
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -126,5 +139,6 @@ namespace ElLimonYSuCausa
         private System.Windows.Forms.ToolStripMenuItem dELIVERYToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pLATOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eMPLEADOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }

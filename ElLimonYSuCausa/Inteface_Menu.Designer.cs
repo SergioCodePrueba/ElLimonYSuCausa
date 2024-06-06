@@ -46,17 +46,18 @@ namespace ElLimonYSuCausa
             // btn_Flameados
             // 
             this.btn_Flameados.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Flameados.Location = new System.Drawing.Point(26, 24);
+            this.btn_Flameados.Location = new System.Drawing.Point(9, 7);
             this.btn_Flameados.Name = "btn_Flameados";
             this.btn_Flameados.Size = new System.Drawing.Size(89, 79);
             this.btn_Flameados.TabIndex = 0;
             this.btn_Flameados.Text = "Flameados";
             this.btn_Flameados.UseVisualStyleBackColor = false;
+            this.btn_Flameados.Click += new System.EventHandler(this.btn_Flameados_Click);
             // 
             // btn_PescaMarisco
             // 
             this.btn_PescaMarisco.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_PescaMarisco.Location = new System.Drawing.Point(134, 24);
+            this.btn_PescaMarisco.Location = new System.Drawing.Point(117, 7);
             this.btn_PescaMarisco.Name = "btn_PescaMarisco";
             this.btn_PescaMarisco.Size = new System.Drawing.Size(89, 79);
             this.btn_PescaMarisco.TabIndex = 1;
@@ -66,7 +67,7 @@ namespace ElLimonYSuCausa
             // btn_DelaCasa
             // 
             this.btn_DelaCasa.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_DelaCasa.Location = new System.Drawing.Point(248, 24);
+            this.btn_DelaCasa.Location = new System.Drawing.Point(231, 7);
             this.btn_DelaCasa.Name = "btn_DelaCasa";
             this.btn_DelaCasa.Size = new System.Drawing.Size(89, 79);
             this.btn_DelaCasa.TabIndex = 2;
@@ -76,7 +77,7 @@ namespace ElLimonYSuCausa
             // btn_Causas
             // 
             this.btn_Causas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Causas.Location = new System.Drawing.Point(364, 24);
+            this.btn_Causas.Location = new System.Drawing.Point(347, 7);
             this.btn_Causas.Name = "btn_Causas";
             this.btn_Causas.Size = new System.Drawing.Size(89, 79);
             this.btn_Causas.TabIndex = 3;
@@ -86,7 +87,7 @@ namespace ElLimonYSuCausa
             // btn_Trios
             // 
             this.btn_Trios.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Trios.Location = new System.Drawing.Point(26, 130);
+            this.btn_Trios.Location = new System.Drawing.Point(9, 113);
             this.btn_Trios.Name = "btn_Trios";
             this.btn_Trios.Size = new System.Drawing.Size(89, 79);
             this.btn_Trios.TabIndex = 4;
@@ -96,7 +97,7 @@ namespace ElLimonYSuCausa
             // btn_DeDosEsMejor
             // 
             this.btn_DeDosEsMejor.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_DeDosEsMejor.Location = new System.Drawing.Point(134, 130);
+            this.btn_DeDosEsMejor.Location = new System.Drawing.Point(117, 113);
             this.btn_DeDosEsMejor.Name = "btn_DeDosEsMejor";
             this.btn_DeDosEsMejor.Size = new System.Drawing.Size(89, 79);
             this.btn_DeDosEsMejor.TabIndex = 5;
@@ -106,7 +107,7 @@ namespace ElLimonYSuCausa
             // btn_ArrocesChicharrones
             // 
             this.btn_ArrocesChicharrones.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_ArrocesChicharrones.Location = new System.Drawing.Point(248, 130);
+            this.btn_ArrocesChicharrones.Location = new System.Drawing.Point(231, 113);
             this.btn_ArrocesChicharrones.Name = "btn_ArrocesChicharrones";
             this.btn_ArrocesChicharrones.Size = new System.Drawing.Size(89, 79);
             this.btn_ArrocesChicharrones.TabIndex = 6;
@@ -116,7 +117,7 @@ namespace ElLimonYSuCausa
             // btn_Bebidas
             // 
             this.btn_Bebidas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Bebidas.Location = new System.Drawing.Point(364, 130);
+            this.btn_Bebidas.Location = new System.Drawing.Point(347, 113);
             this.btn_Bebidas.Name = "btn_Bebidas";
             this.btn_Bebidas.Size = new System.Drawing.Size(89, 79);
             this.btn_Bebidas.TabIndex = 7;
@@ -126,7 +127,7 @@ namespace ElLimonYSuCausa
             // btn_Cervezas
             // 
             this.btn_Cervezas.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Cervezas.Location = new System.Drawing.Point(26, 234);
+            this.btn_Cervezas.Location = new System.Drawing.Point(9, 217);
             this.btn_Cervezas.Name = "btn_Cervezas";
             this.btn_Cervezas.Size = new System.Drawing.Size(89, 79);
             this.btn_Cervezas.TabIndex = 8;
@@ -136,7 +137,7 @@ namespace ElLimonYSuCausa
             // btn_Pulpo
             // 
             this.btn_Pulpo.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Pulpo.Location = new System.Drawing.Point(138, 234);
+            this.btn_Pulpo.Location = new System.Drawing.Point(121, 217);
             this.btn_Pulpo.Name = "btn_Pulpo";
             this.btn_Pulpo.Size = new System.Drawing.Size(89, 79);
             this.btn_Pulpo.TabIndex = 9;
@@ -146,7 +147,7 @@ namespace ElLimonYSuCausa
             // btn_SecaDeRes
             // 
             this.btn_SecaDeRes.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_SecaDeRes.Location = new System.Drawing.Point(246, 234);
+            this.btn_SecaDeRes.Location = new System.Drawing.Point(229, 217);
             this.btn_SecaDeRes.Name = "btn_SecaDeRes";
             this.btn_SecaDeRes.Size = new System.Drawing.Size(89, 79);
             this.btn_SecaDeRes.TabIndex = 10;
@@ -156,7 +157,7 @@ namespace ElLimonYSuCausa
             // btn_Guarniciones
             // 
             this.btn_Guarniciones.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Guarniciones.Location = new System.Drawing.Point(364, 234);
+            this.btn_Guarniciones.Location = new System.Drawing.Point(347, 217);
             this.btn_Guarniciones.Name = "btn_Guarniciones";
             this.btn_Guarniciones.Size = new System.Drawing.Size(89, 79);
             this.btn_Guarniciones.TabIndex = 11;
@@ -167,7 +168,7 @@ namespace ElLimonYSuCausa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 366);
+            this.ClientSize = new System.Drawing.Size(452, 306);
             this.Controls.Add(this.btn_Guarniciones);
             this.Controls.Add(this.btn_SecaDeRes);
             this.Controls.Add(this.btn_Pulpo);
@@ -180,6 +181,7 @@ namespace ElLimonYSuCausa
             this.Controls.Add(this.btn_DelaCasa);
             this.Controls.Add(this.btn_PescaMarisco);
             this.Controls.Add(this.btn_Flameados);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inteface_Menu";
             this.Text = "Inteface_Menu";
             this.ResumeLayout(false);

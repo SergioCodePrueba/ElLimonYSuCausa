@@ -16,5 +16,10 @@ namespace ElLimonYSuCausa
         {
             InitializeComponent();
         }
+
+        private void Mantenedor_Empleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

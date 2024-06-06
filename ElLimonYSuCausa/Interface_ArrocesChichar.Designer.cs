@@ -135,6 +135,7 @@ namespace ElLimonYSuCausa
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Interface_ArrocesChichar";
             this.Text = "Interface_ArrocesChichar";
             this.ResumeLayout(false);
