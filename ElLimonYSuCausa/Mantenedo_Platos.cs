@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using Capa_Logica;
 
 namespace ElLimonYSuCausa
 {
@@ -15,6 +17,11 @@ namespace ElLimonYSuCausa
         public Mantenedo_Platos()
         {
             InitializeComponent();
+            listarPlatos();
+        }
+        public void listarPlatos()
+        {
+            dgvPlatos.DataSource = Log_Platos.Instancia.ListarPlato();
         }
 
 

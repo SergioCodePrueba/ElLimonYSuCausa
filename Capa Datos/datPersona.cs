@@ -10,17 +10,17 @@ using CapaEntidad;
 
 namespace Capa_Datos
 {
-    class Datos_Persona
+    public class datPersona
     {
-        //nombre persona, apellidos, id tipo documento, numero documento
+        
         #region sigleton
-        private static readonly Datos_Persona _instancia = new Datos_Persona();
-        //privado para evitar la instanciación directa
-        public static Datos_Persona Instancia
+        private static readonly datPersona _instancia = new datPersona();
+        
+        public static datPersona Instancia
         {
             get
             {
-                return Datos_Persona._instancia;
+                return datPersona._instancia;
             }
         }
         #endregion singleton
@@ -56,7 +56,7 @@ namespace Capa_Datos
 
 
         //////////////////////////////////EditaCliente
-        public Boolean EditarCliente(entPersona per)
+        public Boolean EditarPersona(entPersona per)
         {
             SqlCommand cmd = null;
             Boolean edita = false;

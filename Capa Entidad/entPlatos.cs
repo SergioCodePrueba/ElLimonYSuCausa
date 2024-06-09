@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capa_Entidad
+namespace CapaEntidad
 {
-    class Entidad_Platos
+    public class entPlatos
     {
         public int idProducto { get; set; } //Plato
         public int idTipoProducto { get; set; } //Categoria

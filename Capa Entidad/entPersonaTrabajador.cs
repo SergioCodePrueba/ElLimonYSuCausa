@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    public class entTrabajador
+    public class entPersonaTrabajador
     {
-        public int idTrabajador { get; set; }
-        public entPersona idPersona { get; set; }
-        public int idTipoTrabajador { get; set; }
-        public int idTipoContrato { get; set; }
+        public string NombrePersona { get; set; }
+        public string ApellidosPersona { get; set; }
+        public string Tipo_Documento { get; set; }
+        public string NumeroDocumento { get; set; }
+        public string Tipo_Trabajador { get; set; }
+        public string Tipo_Contrato { get; set; } 
         public float SalarioTrabajador { get; set; }
         public DateTime FechaIngresoTrabajador { get; set; }
         public string Usuario { get; set; }
