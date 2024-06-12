@@ -180,6 +180,7 @@ namespace ElLimonYSuCausa
             this.Controls.Add(this.btn_DelaCasa);
             this.Controls.Add(this.btn_PescaMarisco);
             this.Controls.Add(this.btn_Flameados);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inteface_Menu";
             this.Text = "Inteface_Menu";
             this.ResumeLayout(false);

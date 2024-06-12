@@ -47,6 +47,7 @@ namespace ElLimonYSuCausa
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 238);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Interface_Pulpo";
             this.Text = "Interface_Pulpo";
             this.ResumeLayout(false);
