@@ -47,6 +47,7 @@ namespace ElLimonYSuCausa
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(249, 227);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Interface_Seco";
             this.Text = "Interface_Seco";
             this.ResumeLayout(false);

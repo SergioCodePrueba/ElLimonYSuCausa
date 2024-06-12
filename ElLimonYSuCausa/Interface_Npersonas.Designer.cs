@@ -36,6 +36,7 @@ namespace ElLimonYSuCausa
             this.btn_Aceptar = new System.Windows.Forms.Button();
             this.txt_nummesa = new System.Windows.Forms.Label();
             this.txt_nm = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -98,11 +99,21 @@ namespace ElLimonYSuCausa
             this.txt_nm.Size = new System.Drawing.Size(21, 20);
             this.txt_nm.TabIndex = 6;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(254, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Mesa:";
+            // 
             // Interface_Npersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 156);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_nm);
             this.Controls.Add(this.txt_nummesa);
             this.Controls.Add(this.btn_Aceptar);
@@ -110,6 +121,7 @@ namespace ElLimonYSuCausa
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.txt_npersonas);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Interface_Npersonas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interface_Npersonas";
@@ -127,5 +139,6 @@ namespace ElLimonYSuCausa
         private System.Windows.Forms.Button btn_Aceptar;
         private System.Windows.Forms.Label txt_nummesa;
         private System.Windows.Forms.TextBox txt_nm;
+        private System.Windows.Forms.Label label2;
     }
 }

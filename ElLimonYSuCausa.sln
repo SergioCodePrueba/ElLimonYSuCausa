@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.34114.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Presentacion", "ElLimonYSuCausa\Capa Presentacion.csproj", "{8BC5D511-9334-4ECB-BCF3-E519898596FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Entidad", "Capa Entidad\Capa Entidad.csproj", "{8AA75662-7DC5-420F-ACB9-2C88EE35C9AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidad", "Capa Entidad\CapaEntidad.csproj", "{8AA75662-7DC5-420F-ACB9-2C88EE35C9AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Datos", "Capa Datos\Capa Datos.csproj", "{D8CB7694-B400-47D6-B9B2-FEA31A1B0805}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "Capa Datos\CapaDatos.csproj", "{D8CB7694-B400-47D6-B9B2-FEA31A1B0805}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Logica", "Capa Logica\Capa Logica.csproj", "{E1F37E5E-1F83-4BA1-9547-89951755C3BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogica", "Capa Logica\CapaLogica.csproj", "{E1F37E5E-1F83-4BA1-9547-89951755C3BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

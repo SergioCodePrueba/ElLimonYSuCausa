@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8AA75662-7DC5-420F-ACB9-2C88EE35C9AD}</ProjectGuid>
+    <ProjectGuid>{E1F37E5E-1F83-4BA1-9547-89951755C3BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Capa_Entidad</RootNamespace>
-    <AssemblyName>Capa Entidad</AssemblyName>
+    <RootNamespace>Capa_Logica</RootNamespace>
+    <AssemblyName>Capa Logica</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,8 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Log Persona.cs" />
+    <Compile Include="Log Platos.cs" />
+    <Compile Include="Log Trabajador.cs" />
+    <Compile Include="logPersonaTrabajador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Datos\CapaDatos.csproj">
+      <Project>{d8cb7694-b400-47d6-b9b2-fea31a1b0805}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa Entidad\CapaEntidad.csproj">
+      <Project>{8aa75662-7dc5-420f-acb9-2c88ee35c9ad}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

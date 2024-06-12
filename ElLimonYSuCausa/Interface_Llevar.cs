@@ -7,23 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaEntidad;
-using Capa_Logica;
 
 namespace ElLimonYSuCausa
 {
-    public partial class Mantenedo_Platos : Form
+    public partial class Interface_Llevar : Form
     {
-        public Mantenedo_Platos()
+        public Interface_Llevar()
         {
             InitializeComponent();
-            listarPlatos();
         }
-        public void listarPlatos()
-        {
-            dgvPlatos.DataSource = Log_Platos.Instancia.ListarPlato();
-        }
-
-
     }
 }

@@ -113,6 +113,7 @@ namespace ElLimonYSuCausa
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Interface_Causas";
             this.Text = "Interface_Causas";
             this.ResumeLayout(false);
