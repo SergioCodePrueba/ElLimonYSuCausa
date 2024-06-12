@@ -18,12 +18,16 @@ namespace ElLimonYSuCausa
         {
             InitializeComponent();
             listarPlatos();
+            LLenarCMBCategoria();
         }
         public void listarPlatos()
         {
             dgvPlatos.DataSource = Log_Platos.Instancia.ListarPlato();
         }
-
-
+        private void LLenarCMBCategoria()
+        {
+            cmbCategoria.DataSource = logCategoria.Instancia.ListarCategoria();
+            cmbCategoria.DisplayMember = "Descripcion";
+        }
     }
 }

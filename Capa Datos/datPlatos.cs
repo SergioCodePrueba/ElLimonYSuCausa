@@ -37,13 +37,12 @@ namespace Capa_Datos
                 while (dr.Read())
                 {
                     entPlatos pla = new entPlatos();
-                    pla.idProducto = Convert.ToInt32(dr["idProducto"]);
-                    pla.idTipoProducto = Convert.ToInt32(dr["Descripcion"]);
-                    pla.NombreProducto = dr["NombreProducto"].ToString();
-                    pla.PrecioProducto = Convert.ToSingle(dr["PrecioProducto"]);
+                    pla.id_Producto = Convert.ToInt32(dr["idProducto"]);
+                    pla.Categoria = dr["Descripcion"].ToString();
+                    pla.Nombre_Producto = dr["NombreProducto"].ToString();
+                    pla.Precio_Producto = Convert.ToSingle(dr["PrecioProducto"]);
                     lista.Add(pla);
                 }
-
             }
             catch (Exception e)
             {
@@ -65,8 +64,8 @@ namespace Capa_Datos
                 cmd = new SqlCommand("spInsertarPlatos", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idTipoProducto", pla.idTipoProducto);
-                cmd.Parameters.AddWithValue("@NombreProducto", pla.NombreProducto);
-                cmd.Parameters.AddWithValue("@PrecioProducto", pla.PrecioProducto);
+                cmd.Parameters.AddWithValue("@NombreProducto", pla.Nombre_Producto);
+                cmd.Parameters.AddWithValue("@PrecioProducto", pla.Precio_Producto);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -93,10 +92,10 @@ namespace Capa_Datos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spEditarPlatos", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idProducto", pla.idProducto);
+                cmd.Parameters.AddWithValue("@idProducto", pla.id_Producto);
                 cmd.Parameters.AddWithValue("@idTipoProducto", pla.idTipoProducto);
-                cmd.Parameters.AddWithValue("@NombreProducto", pla.NombreProducto);
-                cmd.Parameters.AddWithValue("@PrecioProducto", pla.PrecioProducto);
+                cmd.Parameters.AddWithValue("@NombreProducto", pla.Nombre_Producto);
+                cmd.Parameters.AddWithValue("@PrecioProducto", pla.Precio_Producto);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capa_Logica;
 
 namespace ElLimonYSuCausa
 {
@@ -16,10 +17,7 @@ namespace ElLimonYSuCausa
         {
             InitializeComponent();
         }
+        public void listarEmpleados() => dgvPersonaTrabajador.DataSource = logPersonaTrabajador.Instancia.ListarPT();
 
-        private void Mantenedor_Empleados_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

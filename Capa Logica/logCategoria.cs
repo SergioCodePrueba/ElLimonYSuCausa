@@ -8,29 +8,27 @@ using System.Threading.Tasks;
 
 namespace Capa_Logica
 {
-    public class logPersonaTrabajador
+    public class logCategoria
     {
         #region sigleton
 
-        private static readonly logPersonaTrabajador _instancia = new logPersonaTrabajador();
+        private static readonly logCategoria _instancia = new logCategoria();
         //privado para evitar la instanciación directa
-        public static logPersonaTrabajador Instancia
+        public static logCategoria Instancia
         {
             get
             {
-                return logPersonaTrabajador._instancia;
+                return logCategoria._instancia;
             }
         }
         #endregion singleton
 
         #region metodos
-
-        ///listar
-        public List<entPersonaTrabajador> ListarPT()
+        //listar
+        public List<entCategoria> ListarCategoria()
         {
-            return datPersonaTrabajador.Instancia.ListarPT();
+            return datCategoria.Instancia.ListarCategoria();
         }
-
         #endregion metodos
     }
 }

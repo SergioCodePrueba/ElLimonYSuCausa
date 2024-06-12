@@ -40,16 +40,16 @@ namespace Capa_Datos
                 while (dr.Read())
                 {
                     entPersonaTrabajador PT = new entPersonaTrabajador();
-                    PT.NombrePersona = dr["dbo.Persona.NombresPersona"].ToString();
-                    PT.ApellidosPersona = dr["dbo.Persona.ApellidosPersona"].ToString();
-                    PT.Tipo_Documento = dr["dbo.TipoDocumento.Descripcion"].ToString();
-                    PT.NumeroDocumento = dr["dbo.Persona.NumeroDocumento"].ToString();
-                    PT.Tipo_Trabajador = dr["dbo.TipoTrabajador.Descripcion"].ToString();
-                    PT.Tipo_Contrato= dr["dbo.TipoContrato.Descripcion"].ToString();
-                    PT.SalarioTrabajador = Convert.ToSingle(dr["dbo.Trabajador.SalarioTrabajador"]);
-                    PT.FechaIngresoTrabajador = Convert.ToDateTime(dr["dbo.Trabajador.FechaIngresoTrabajador"]);
-                    PT.Usuario = dr["dbo.Trabajador.Usuario"].ToString();
-                    PT.Contraseña = dr["dbo.Trabajador.Contraseña"].ToString();
+                    PT.NombrePersona = dr["NombresPersona"].ToString();
+                    PT.ApellidosPersona = dr["ApellidosPersona"].ToString();
+                    PT.Tipo_Documento = dr["Descripcion"].ToString();
+                    PT.NumeroDocumento = dr["NumeroDocumento"].ToString();
+                    PT.Tipo_Trabajador = dr["Descripcion"].ToString();
+                    PT.Tipo_Contrato= dr["Descripcion"].ToString();
+                    PT.SalarioTrabajador = Convert.ToSingle(dr["SalarioTrabajador"]);
+                    PT.FechaIngresoTrabajador = Convert.ToDateTime(dr["FechaIngresoTrabajador"]);
+                    PT.Usuario = dr["Usuario"].ToString();
+                    PT.Contraseña = dr["Contraseña"].ToString();
                     lista.Add(PT);
                 }
 
