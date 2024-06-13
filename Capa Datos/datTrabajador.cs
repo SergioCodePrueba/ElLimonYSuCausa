@@ -26,7 +26,7 @@ namespace Capa_Datos
         #endregion singleton
 
         #region metodos
-        /////////////////////////InsertaCliente
+        
         public Boolean InsertarTrabajador(entTrabajador Tra)
         {
             SqlCommand cmd = null;
@@ -59,7 +59,7 @@ namespace Capa_Datos
         }
 
 
-        //////////////////////////////////EditaCliente
+        
         public Boolean EditarTrabajador(entTrabajador Tra)
         {
             SqlCommand cmd = null;
@@ -69,7 +69,7 @@ namespace Capa_Datos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spEditarTrabajador", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idTrabajador", Tra.idTrabajador);
+                cmd.Parameters.AddWithValue("@idPersona", Tra.idPersona);
                 cmd.Parameters.AddWithValue("@idTipoTrabajador", Tra.idTipoTrabajador);
                 cmd.Parameters.AddWithValue("@idTipoContrato", Tra.idTipoContrato);
                 cmd.Parameters.AddWithValue("@SalarioTrabajador", Tra.SalarioTrabajador);
@@ -89,6 +89,30 @@ namespace Capa_Datos
             }
             finally { cmd.Connection.Close(); }
             return edita;
+        }
+        public Boolean EliminarTrabajador(entTrabajador Tra)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEliminarTrabajador", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idPersona", Tra.idPersona);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    delete = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return delete;
         }
         #endregion metodos
     }

@@ -35,18 +35,25 @@ namespace ElLimonYSuCausa
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.cmbTipoDocumento = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtnDocumento = new System.Windows.Forms.TextBox();
+            this.cmbTipoTrabajador = new System.Windows.Forms.ComboBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvPersonaTrabajador = new System.Windows.Forms.DataGridView();
+            this.cmbTipoContrato = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtidPersona = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonaTrabajador)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +96,7 @@ namespace ElLimonYSuCausa
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 108);
+            this.label5.Location = new System.Drawing.Point(12, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 13);
             this.label5.TabIndex = 3;
@@ -98,33 +105,33 @@ namespace ElLimonYSuCausa
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 156);
+            this.label6.Location = new System.Drawing.Point(236, 144);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "Fecha de Ingreso: ";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(68, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtNombre.Location = new System.Drawing.Point(68, 23);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(118, 20);
+            this.txtNombre.TabIndex = 5;
             // 
-            // textBox2
+            // txtApellido
             // 
-            this.textBox2.Location = new System.Drawing.Point(248, 23);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(112, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtApellido.Location = new System.Drawing.Point(248, 23);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(112, 20);
+            this.txtApellido.TabIndex = 6;
             // 
-            // comboBox1
+            // cmbTipoDocumento
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(116, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(52, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cmbTipoDocumento.FormattingEnabled = true;
+            this.cmbTipoDocumento.Location = new System.Drawing.Point(116, 64);
+            this.cmbTipoDocumento.Name = "cmbTipoDocumento";
+            this.cmbTipoDocumento.Size = new System.Drawing.Size(52, 21);
+            this.cmbTipoDocumento.TabIndex = 7;
             // 
             // label7
             // 
@@ -135,52 +142,54 @@ namespace ElLimonYSuCausa
             this.label7.TabIndex = 8;
             this.label7.Text = "N° Documento:";
             // 
-            // textBox3
+            // txtnDocumento
             // 
-            this.textBox3.Location = new System.Drawing.Point(260, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtnDocumento.Location = new System.Drawing.Point(260, 64);
+            this.txtnDocumento.Name = "txtnDocumento";
+            this.txtnDocumento.Size = new System.Drawing.Size(100, 20);
+            this.txtnDocumento.TabIndex = 9;
             // 
-            // comboBox2
+            // cmbTipoTrabajador
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(106, 105);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(103, 21);
-            this.comboBox2.TabIndex = 10;
+            this.cmbTipoTrabajador.FormattingEnabled = true;
+            this.cmbTipoTrabajador.Location = new System.Drawing.Point(106, 141);
+            this.cmbTipoTrabajador.Name = "cmbTipoTrabajador";
+            this.cmbTipoTrabajador.Size = new System.Drawing.Size(112, 21);
+            this.cmbTipoTrabajador.TabIndex = 10;
             // 
-            // textBox4
+            // txtSalario
             // 
-            this.textBox4.Location = new System.Drawing.Point(260, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
+            this.txtSalario.Location = new System.Drawing.Point(260, 105);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(100, 20);
+            this.txtSalario.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // dtpFechaIngreso
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(114, 150);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(239, 170);
+            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(158, 20);
+            this.dtpFechaIngreso.TabIndex = 12;
             // 
-            // button3
+            // btnModificar
             // 
-            this.button3.Location = new System.Drawing.Point(423, 82);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 39);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnModificar.Location = new System.Drawing.Point(423, 82);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(109, 39);
+            this.btnModificar.TabIndex = 15;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // button2
+            // btnEliminar
             // 
-            this.button2.Location = new System.Drawing.Point(423, 131);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 39);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(423, 131);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(109, 39);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // button1
             // 
@@ -190,32 +199,98 @@ namespace ElLimonYSuCausa
             this.button1.TabIndex = 13;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvPersonaTrabajador
             // 
             this.dgvPersonaTrabajador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonaTrabajador.Location = new System.Drawing.Point(18, 184);
+            this.dgvPersonaTrabajador.Location = new System.Drawing.Point(18, 241);
             this.dgvPersonaTrabajador.Name = "dgvPersonaTrabajador";
-            this.dgvPersonaTrabajador.Size = new System.Drawing.Size(538, 251);
+            this.dgvPersonaTrabajador.Size = new System.Drawing.Size(538, 194);
             this.dgvPersonaTrabajador.TabIndex = 16;
+            this.dgvPersonaTrabajador.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonaTrabajador_CellClick);
+            // 
+            // cmbTipoContrato
+            // 
+            this.cmbTipoContrato.FormattingEnabled = true;
+            this.cmbTipoContrato.Location = new System.Drawing.Point(96, 105);
+            this.cmbTipoContrato.Name = "cmbTipoContrato";
+            this.cmbTipoContrato.Size = new System.Drawing.Size(113, 21);
+            this.cmbTipoContrato.TabIndex = 18;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 108);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Tipo Contrato:";
+            // 
+            // txtContraseña
+            // 
+            this.txtContraseña.Location = new System.Drawing.Point(91, 199);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(118, 20);
+            this.txtContraseña.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 202);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Contraseña: ";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(68, 174);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(118, 20);
+            this.txtUsuario.TabIndex = 22;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(15, 177);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Usuario: ";
+            // 
+            // txtidPersona
+            // 
+            this.txtidPersona.Location = new System.Drawing.Point(432, 177);
+            this.txtidPersona.Name = "txtidPersona";
+            this.txtidPersona.Size = new System.Drawing.Size(100, 20);
+            this.txtidPersona.TabIndex = 23;
+            this.txtidPersona.Visible = false;
             // 
             // Mantenedor_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 452);
+            this.Controls.Add(this.txtidPersona);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.cmbTipoContrato);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dgvPersonaTrabajador);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.dtpFechaIngreso);
+            this.Controls.Add(this.txtSalario);
+            this.Controls.Add(this.cmbTipoTrabajador);
+            this.Controls.Add(this.txtnDocumento);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmbTipoDocumento);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -239,17 +314,24 @@ namespace ElLimonYSuCausa
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.ComboBox cmbTipoDocumento;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtnDocumento;
+        private System.Windows.Forms.ComboBox cmbTipoTrabajador;
+        private System.Windows.Forms.TextBox txtSalario;
+        private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvPersonaTrabajador;
+        private System.Windows.Forms.ComboBox cmbTipoContrato;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtidPersona;
     }
 }

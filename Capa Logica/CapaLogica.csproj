@@ -45,7 +45,11 @@
     <Compile Include="Log Platos.cs" />
     <Compile Include="Log Trabajador.cs" />
     <Compile Include="logCategoria.cs" />
+    <Compile Include="logObteneridPersona.cs" />
     <Compile Include="logPersonaTrabajador.cs" />
+    <Compile Include="logTipoContrato.cs" />
+    <Compile Include="logTipoDocumento.cs" />
+    <Compile Include="logTipoTrabajador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

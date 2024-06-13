@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Capa_Logica
 {
-    class Log_Trabajador
+    public class Log_Trabajador
     {
         #region sigleton
 
@@ -36,7 +36,10 @@ namespace Capa_Logica
         {
             datTrabajador.Instancia.EditarTrabajador(tra);
         }
-
+        public void EliminarTrabajador(entTrabajador tra)
+        {
+            datTrabajador.Instancia.EliminarTrabajador(tra);
+        }
         #endregion metodos
     }
 }

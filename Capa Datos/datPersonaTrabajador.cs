@@ -40,12 +40,13 @@ namespace Capa_Datos
                 while (dr.Read())
                 {
                     entPersonaTrabajador PT = new entPersonaTrabajador();
+                    PT.idPersona = Convert.ToInt32(dr["idPersona"]);
                     PT.NombrePersona = dr["NombresPersona"].ToString();
                     PT.ApellidosPersona = dr["ApellidosPersona"].ToString();
-                    PT.Tipo_Documento = dr["Descripcion"].ToString();
+                    PT.Tipo_Documento = dr["Tipo_Documento"].ToString();
                     PT.NumeroDocumento = dr["NumeroDocumento"].ToString();
-                    PT.Tipo_Trabajador = dr["Descripcion"].ToString();
-                    PT.Tipo_Contrato= dr["Descripcion"].ToString();
+                    PT.Tipo_Trabajador = dr["Tipo_Trabajador"].ToString();
+                    PT.Tipo_Contrato= dr["Tipo_Contrato"].ToString();
                     PT.SalarioTrabajador = Convert.ToSingle(dr["SalarioTrabajador"]);
                     PT.FechaIngresoTrabajador = Convert.ToDateTime(dr["FechaIngresoTrabajador"]);
                     PT.Usuario = dr["Usuario"].ToString();

@@ -19,6 +19,7 @@ namespace ElLimonYSuCausa
             InitializeComponent();
             listarPlatos();
             LLenarCMBCategoria();
+            LimpiarDatos();
         }
         public void listarPlatos()
         {
@@ -45,6 +46,7 @@ namespace ElLimonYSuCausa
             {
                 MessageBox.Show("Error.." + ex);
             }
+            LimpiarDatos();
             listarPlatos();
         }
 
@@ -56,23 +58,45 @@ namespace ElLimonYSuCausa
             cmbCategoria.SelectedIndex = (Convert.ToInt32(filaActual.Cells[1].Value)) - 1;
             txtPrecio.Text = filaActual.Cells[4].Value.ToString();
         }
-
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void btnModificar_Click_1(object sender, EventArgs e)
         {
             try
             {
                 entPlatos p = new entPlatos();
-                p.id_Producto = Convert.ToInt32(txtidPlato.Text);
+                p.id_Producto = int.Parse(txtidPlato.Text);
                 p.Nombre_Producto = txtNombreProducto.Text;
                 p.idTipoProducto = (cmbCategoria.SelectedIndex) + 1;
-                p.Precio_Producto = Convert.ToSingle(txtPrecio.Text);
+                p.Precio_Producto = float.Parse(txtPrecio.Text);
                 Log_Platos.Instancia.EditarPlato(p);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error.." + ex);
             }
+            LimpiarDatos();
             listarPlatos();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entPlatos p = new entPlatos();
+                p.id_Producto = int.Parse(txtidPlato.Text.Trim());
+                Log_Platos.Instancia.EliminarPlatos(p);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarDatos();
+            listarPlatos();
+        }
+        public void LimpiarDatos()
+        { 
+            txtNombreProducto.Text = "";
+            txtPrecio.Text = "";
+            cmbCategoria.Text = "";
         }
     }
 }

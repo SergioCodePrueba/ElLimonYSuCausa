@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entCategoria.cs" />
+    <Compile Include="entObteneridPersonas.cs" />
     <Compile Include="entPersonaTrabajador.cs" />
+    <Compile Include="entTipoContrato.cs" />
+    <Compile Include="entTipoDocumento.cs" />
+    <Compile Include="entTipoTrabajador.cs" />
     <Compile Include="entTrabajador.cs" />
     <Compile Include="entPersona.cs" />
     <Compile Include="entPlatos.cs" />

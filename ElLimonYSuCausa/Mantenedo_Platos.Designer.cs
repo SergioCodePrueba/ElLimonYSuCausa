@@ -110,6 +110,7 @@ namespace ElLimonYSuCausa
             this.button2.TabIndex = 7;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnModificar
             // 
@@ -119,6 +120,7 @@ namespace ElLimonYSuCausa
             this.btnModificar.TabIndex = 7;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
             // 
             // dgvPlatos
             // 

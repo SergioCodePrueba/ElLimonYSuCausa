@@ -44,7 +44,11 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="datCategoria.cs" />
+    <Compile Include="datObteneridPersona.cs" />
     <Compile Include="datPersona.cs" />
+    <Compile Include="datTipoContrato.cs" />
+    <Compile Include="datTipoDocumento.cs" />
+    <Compile Include="datTipoTrabajador.cs" />
     <Compile Include="datTrabajador.cs" />
     <Compile Include="datPlatos.cs" />
     <Compile Include="datPersonaTrabajador.cs" />

@@ -9,7 +9,7 @@ namespace CapaEntidad
     public class entTrabajador
     {
         public int idTrabajador { get; set; }
-        public entPersona idPersona { get; set; }
+        public int idPersona { get; set; }
         public int idTipoTrabajador { get; set; }
         public int idTipoContrato { get; set; }
         public float SalarioTrabajador { get; set; }

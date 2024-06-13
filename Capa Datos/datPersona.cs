@@ -25,7 +25,7 @@ namespace Capa_Datos
         }
         #endregion singleton
         #region metodos
-        /////////////////////////InsertaCliente
+        
         public Boolean InsertarPersona(entPersona per)
         {
             SqlCommand cmd = null;
@@ -55,7 +55,7 @@ namespace Capa_Datos
         }
 
 
-        //////////////////////////////////EditaCliente
+        
         public Boolean EditarPersona(entPersona per)
         {
             SqlCommand cmd = null;
@@ -83,6 +83,31 @@ namespace Capa_Datos
             }
             finally { cmd.Connection.Close(); }
             return edita;
+        }
+
+        public Boolean EliminarPersona(entPersona per)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEliminarPersona", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idPersona", per.idPersona);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    delete = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return delete;
         }
         #endregion metodos
     }

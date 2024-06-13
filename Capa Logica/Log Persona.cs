@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Capa_Logica
 {
-    class logPersona
+    public class logPersona
     {
         #region sigleton
         
@@ -37,7 +37,10 @@ namespace Capa_Logica
         {
             datPersona.Instancia.EditarPersona(per);
         }
-
+        public void EliminarPersona(entPersona per)
+        {
+            datPersona.Instancia.EliminarPersona(per);
+        }
         #endregion metodos
     }
 

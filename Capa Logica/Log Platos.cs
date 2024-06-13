@@ -41,7 +41,10 @@ namespace Capa_Logica
         {
             datPlatos.Instancia.EditarPlato(pla);
         }
-
+        public void EliminarPlatos(entPlatos pla)
+        {
+            datPlatos.Instancia.EliminarPlatos(pla);
+        }
         #endregion metodos
     }
 }

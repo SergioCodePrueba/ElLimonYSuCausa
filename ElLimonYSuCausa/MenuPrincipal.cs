@@ -62,6 +62,7 @@ namespace ElLimonYSuCausa
             if (FrmOpen == null)
             {
                 mp.MdiParent = this;
+                mp.LimpiarDatos();
                 mp.Show();
             }
         }
