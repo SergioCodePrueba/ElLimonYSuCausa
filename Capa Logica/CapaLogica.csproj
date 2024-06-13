@@ -46,6 +46,7 @@
     <Compile Include="Log Trabajador.cs" />
     <Compile Include="logCategoria.cs" />
     <Compile Include="logObteneridPersona.cs" />
+    <Compile Include="logObtenerTrabajador.cs" />
     <Compile Include="logPersonaTrabajador.cs" />
     <Compile Include="logTipoContrato.cs" />
     <Compile Include="logTipoDocumento.cs" />

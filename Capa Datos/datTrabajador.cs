@@ -99,7 +99,7 @@ namespace Capa_Datos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spEliminarTrabajador", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idPersona", Tra.idPersona);
+                cmd.Parameters.AddWithValue("@idTrabajador", Tra.idTrabajador);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)

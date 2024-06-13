@@ -52,6 +52,7 @@
     <Compile Include="datTrabajador.cs" />
     <Compile Include="datPlatos.cs" />
     <Compile Include="datPersonaTrabajador.cs" />
+    <Compile Include="datObteneridTrabajador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -13,7 +13,7 @@ namespace Capa_Logica
         #region sigleton
 
         private static readonly logObteneridPersona _instancia = new logObteneridPersona();
-        //privado para evitar la instanciación directa
+        
         public static logObteneridPersona Instancia
         {
             get
@@ -25,10 +25,7 @@ namespace Capa_Logica
 
         #region metodos
         //listar
-        public int ObtenerPersona()
-        {
-            return datObteneridPersona.Instancia.ListarOP();
-        }
+        public int ObtenerPersona => datObteneridPersona.Instancia.ListarOP();
         #endregion metodos
     }
 }

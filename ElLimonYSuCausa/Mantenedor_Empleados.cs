@@ -57,7 +57,7 @@ namespace ElLimonYSuCausa
                     NumeroDocumento = txtnDocumento.Text
                 };
                 logPersona.Instancia.InsertaPersona(p);
-                int idPersona = logObteneridPersona.Instancia.ObtenerPersona();
+                int idPersona = logObteneridPersona.Instancia.ObtenerPersona;
                 entTrabajador t = new entTrabajador
                 {
                     idPersona = idPersona,
@@ -116,16 +116,16 @@ namespace ElLimonYSuCausa
         {
             try
             {
+                entTrabajador t = new entTrabajador()
+                {
+                    idTrabajador = logObtenerTrabajador.Instancia.ListarOTrabajador(int.Parse(txtidPersona.Text))
+                };
+                Log_Trabajador.Instancia.EliminarTrabajador(t);
                 entPersona p = new entPersona()
                 {
                     idPersona = int.Parse(txtidPersona.Text.Trim())
                 };
                 logPersona.Instancia.EliminarPersona(p);
-                entTrabajador t = new entTrabajador()
-                {
-                    idPersona = int.Parse(txtidPersona.Text.Trim())
-                };
-                Log_Trabajador.Instancia.EliminarTrabajador(t);
 
             }
             catch (Exception ex)

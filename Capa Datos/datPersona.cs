@@ -92,7 +92,7 @@ namespace Capa_Datos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEliminarPersona", cn);
+                cmd = new SqlCommand("spEliminarPersonas", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idPersona", per.idPersona);
                 cn.Open();
