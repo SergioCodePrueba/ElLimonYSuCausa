@@ -32,13 +32,14 @@ namespace ElLimonYSuCausa
             this.label1 = new System.Windows.Forms.Label();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.dgvPlatos = new System.Windows.Forms.DataGridView();
+            this.txtidPlato = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@ namespace ElLimonYSuCausa
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(123, 26);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(232, 21);
+            this.cmbCategoria.Size = new System.Drawing.Size(109, 21);
             this.cmbCategoria.TabIndex = 1;
             // 
             // label2
@@ -68,12 +69,12 @@ namespace ElLimonYSuCausa
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre Producto:";
             // 
-            // textBox1
+            // txtNombreProducto
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtNombreProducto.Location = new System.Drawing.Point(123, 72);
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreProducto.TabIndex = 3;
             // 
             // label3
             // 
@@ -84,12 +85,12 @@ namespace ElLimonYSuCausa
             this.label3.TabIndex = 4;
             this.label3.Text = "Precio: ";
             // 
-            // textBox2
+            // txtPrecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 124);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtPrecio.Location = new System.Drawing.Point(123, 124);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.TabIndex = 5;
             // 
             // button1
             // 
@@ -99,6 +100,7 @@ namespace ElLimonYSuCausa
             this.button1.TabIndex = 6;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -109,14 +111,14 @@ namespace ElLimonYSuCausa
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnModificar
             // 
-            this.button3.Location = new System.Drawing.Point(396, 60);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 39);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnModificar.Location = new System.Drawing.Point(396, 60);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(109, 39);
+            this.btnModificar.TabIndex = 7;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
             // dgvPlatos
             // 
@@ -125,19 +127,29 @@ namespace ElLimonYSuCausa
             this.dgvPlatos.Name = "dgvPlatos";
             this.dgvPlatos.Size = new System.Drawing.Size(484, 250);
             this.dgvPlatos.TabIndex = 8;
+            this.dgvPlatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlatos_CellClick);
+            // 
+            // txtidPlato
+            // 
+            this.txtidPlato.Location = new System.Drawing.Point(264, 26);
+            this.txtidPlato.Name = "txtidPlato";
+            this.txtidPlato.Size = new System.Drawing.Size(100, 20);
+            this.txtidPlato.TabIndex = 9;
+            this.txtidPlato.Visible = false;
             // 
             // Mantenedo_Platos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(523, 430);
+            this.Controls.Add(this.txtidPlato);
             this.Controls.Add(this.dgvPlatos);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombreProducto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.label1);
@@ -156,12 +168,13 @@ namespace ElLimonYSuCausa
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombreProducto;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.DataGridView dgvPlatos;
+        private System.Windows.Forms.TextBox txtidPlato;
     }
 }

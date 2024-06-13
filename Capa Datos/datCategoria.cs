@@ -29,7 +29,7 @@ namespace Capa_Datos
             List<entCategoria> lista = new List<entCategoria>();
             try
             {
-                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spListarCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();

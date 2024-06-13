@@ -27,7 +27,52 @@ namespace ElLimonYSuCausa
         private void LLenarCMBCategoria()
         {
             cmbCategoria.DataSource = logCategoria.Instancia.ListarCategoria();
-            cmbCategoria.DisplayMember = "Descripcion";
+            cmbCategoria.DisplayMember = "NombreCategoria";
+            cmbCategoria.ValueMember = "CategoriaID";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entPlatos p = new entPlatos();
+                p.Nombre_Producto = txtNombreProducto.Text;
+                p.idTipoProducto = (cmbCategoria.SelectedIndex) + 1;
+                p.Precio_Producto = Convert.ToSingle(txtPrecio.Text);
+                Log_Platos.Instancia.InsertarPlato(p);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            listarPlatos();
+        }
+
+        private void dgvPlatos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvPlatos.Rows[e.RowIndex]; //
+            txtidPlato.Text = filaActual.Cells[0].Value.ToString();
+            txtNombreProducto.Text = filaActual.Cells[3].Value.ToString();
+            cmbCategoria.SelectedIndex = (Convert.ToInt32(filaActual.Cells[1].Value)) - 1;
+            txtPrecio.Text = filaActual.Cells[4].Value.ToString();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entPlatos p = new entPlatos();
+                p.id_Producto = Convert.ToInt32(txtidPlato.Text);
+                p.Nombre_Producto = txtNombreProducto.Text;
+                p.idTipoProducto = (cmbCategoria.SelectedIndex) + 1;
+                p.Precio_Producto = Convert.ToSingle(txtPrecio.Text);
+                Log_Platos.Instancia.EditarPlato(p);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            listarPlatos();
         }
     }
 }

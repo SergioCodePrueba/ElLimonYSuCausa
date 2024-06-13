@@ -38,7 +38,8 @@ namespace Capa_Datos
                 {
                     entPlatos pla = new entPlatos();
                     pla.id_Producto = Convert.ToInt32(dr["idProducto"]);
-                    pla.Categoria = dr["Descripcion"].ToString();
+                    pla.idTipoProducto = Convert.ToInt32(dr["idTipoProducto"]);
+                    pla.Categoria = dr["Categoria"].ToString();
                     pla.Nombre_Producto = dr["NombreProducto"].ToString();
                     pla.Precio_Producto = Convert.ToSingle(dr["PrecioProducto"]);
                     lista.Add(pla);
