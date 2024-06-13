@@ -118,7 +118,7 @@ namespace ElLimonYSuCausa
             {
                 entTrabajador t = new entTrabajador()
                 {
-                    idTrabajador = logObtenerTrabajador.Instancia.ListarOTrabajador(int.Parse(txtidPersona.Text))
+                    idPersona=int.Parse(txtidPersona.Text)
                 };
                 Log_Trabajador.Instancia.EliminarTrabajador(t);
                 entPersona p = new entPersona()
